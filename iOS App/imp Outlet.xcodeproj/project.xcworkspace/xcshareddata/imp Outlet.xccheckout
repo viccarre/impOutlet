@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E24F2D0B-26D7-4218-BE9F-588965EC1D31</string>
+	<key>IDESourceControlProjectName</key>
+	<string>imp Outlet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E1FDF671B9666CB824F336D3554DAD74DB28FD65</key>
+		<string>https://github.com/viccarre/impOutlet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS App/imp Outlet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E1FDF671B9666CB824F336D3554DAD74DB28FD65</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/viccarre/impOutlet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E1FDF671B9666CB824F336D3554DAD74DB28FD65</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1FDF671B9666CB824F336D3554DAD74DB28FD65</string>
+			<key>IDESourceControlWCCName</key>
+			<string>imp%20Outlet</string>
+		</dict>
+	</array>
+</dict>
+</plist>
