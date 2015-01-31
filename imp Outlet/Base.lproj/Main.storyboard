@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wcq-kS-kY8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,115 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-W0-fkp">
+                                <rect key="frame" x="276" y="178" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch1:" destination="vXZ-lx-hvc" eventType="valueChanged" id="n8s-Vo-tVA"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outlet 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ef-as-FYX">
+                                <rect key="frame" x="248" y="149" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UBy-4W-BlG"/>
+                                    <constraint firstAttribute="width" constant="105" id="t1U-SL-6mf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://agent.electricimp.com/" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93S-Xd-0NT">
+                                <rect key="frame" x="192" y="72" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="OaB-97-ey8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tnp-At-2mg">
+                                <rect key="frame" x="276" y="250" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch2:" destination="vXZ-lx-hvc" eventType="valueChanged" id="L9m-Tg-nmU"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outlet 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM1-lT-z0d">
+                                <rect key="frame" x="248" y="217" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="bUH-pP-MsT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Set the agent URL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-mo-VdA">
+                                <rect key="frame" x="235" y="101" width="141" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4y1-HF-h12">
+                                <rect key="frame" x="276" y="322" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switch2:" destination="vXZ-lx-hvc" eventType="valueChanged" id="bpP-d0-dof"/>
+                                    <action selector="switch3:" destination="vXZ-lx-hvc" eventType="valueChanged" id="HVW-VP-0mI"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outlet 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNy-Dj-LeC">
+                                <rect key="frame" x="248" y="289" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="dFR-L8-6vN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74117647058823533" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="gZZ-mo-VdA" secondAttribute="centerY" constant="188.5" id="2Yf-bg-kRA"/>
+                            <constraint firstAttribute="centerY" secondItem="Vfr-W0-fkp" secondAttribute="centerY" constant="106.5" id="5mz-v7-Hnj"/>
+                            <constraint firstAttribute="centerX" secondItem="gZZ-mo-VdA" secondAttribute="centerX" constant="-5.5" id="60D-Vb-1Vd"/>
+                            <constraint firstAttribute="centerY" secondItem="wNy-Dj-LeC" secondAttribute="centerY" constant="-6.5" id="BeJ-2o-ILy"/>
+                            <constraint firstAttribute="centerY" secondItem="Tnp-At-2mg" secondAttribute="centerY" constant="34.5" id="Cw4-aN-aYD"/>
+                            <constraint firstAttribute="centerY" secondItem="4y1-HF-h12" secondAttribute="centerY" constant="-37.5" id="D2C-4S-cUw"/>
+                            <constraint firstAttribute="centerX" secondItem="Vfr-W0-fkp" secondAttribute="centerX" constant="-0.5" id="ECm-2i-ZSK"/>
+                            <constraint firstAttribute="centerX" secondItem="93S-Xd-0NT" secondAttribute="centerX" id="Jg3-T9-fBS"/>
+                            <constraint firstAttribute="centerY" secondItem="8ef-as-FYX" secondAttribute="centerY" constant="140.5" id="UtL-fZ-WIA"/>
+                            <constraint firstAttribute="centerY" secondItem="AM1-lT-z0d" secondAttribute="centerY" constant="65.5" id="cRF-Rb-XMc"/>
+                            <constraint firstAttribute="centerY" secondItem="93S-Xd-0NT" secondAttribute="centerY" constant="213" id="gtu-e0-WST"/>
+                            <constraint firstAttribute="centerX" secondItem="Tnp-At-2mg" secondAttribute="centerX" constant="-0.5" id="nRu-CO-VTS"/>
+                            <constraint firstAttribute="centerX" secondItem="4y1-HF-h12" secondAttribute="centerX" constant="-0.5" id="oMg-JM-haW"/>
+                            <constraint firstAttribute="centerX" secondItem="AM1-lT-z0d" secondAttribute="centerX" constant="-0.5" id="quN-GR-e6b"/>
+                            <constraint firstAttribute="centerX" secondItem="wNy-Dj-LeC" secondAttribute="centerX" constant="-0.5" id="tWU-Kg-ow1"/>
+                            <constraint firstAttribute="centerX" secondItem="8ef-as-FYX" secondAttribute="centerX" constant="-0.5" id="uLd-fe-Adx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XzJ-Eo-MO4"/>
+                    <connections>
+                        <outlet property="urlOne" destination="93S-Xd-0NT" id="3KU-nC-k69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1260" y="1123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QMG-Gr-tJl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wcq-kS-kY8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ig-1R-1l8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="eiw-MI-GK4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrV-wM-svx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="1123"/>
         </scene>
     </scenes>
 </document>
